@@ -4,93 +4,122 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us</title>
+    <title>About Us - My Company</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Datta Able Theme CSS (Lite Version) -->
+    <link rel="stylesheet" href="https://codedthemes.com/datta-able/bootstrap-lite/assets/css/style.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2rem;
-            background-color: #f9f9f9;
-            color: #333;
+        /* Custom header color */
+        
+        .custom-header {
+            background-color: #0c4a6e;
         }
         
-        h1 {
-            color: #0c4a6e;
-            /* matching your header/nav color */
+        .custom-header .nav-link {
+            color: #fff;
+        }
+        
+        .custom-header .nav-link:hover {
+            color: #cfd4da;
+        }
+        
+        .social-icons a {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-left: 10px;
+        }
+        
+        .social-icons a:hover {
+            color: #cfd4da;
+        }
+        
+        main.container {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
         }
         
         ul {
             list-style-type: disc;
-            /* bullet points */
-            margin-left: 1.5rem;
-        }
-        
-        p {
-            max-width: 600px;
+            padding-left: 1.5rem;
+            font-size: 1.1rem;
             line-height: 1.6;
         }
     </style>
 </head>
 
 <body>
-        <!-- Navbar -->
+    <!-- Header Navbar -->
     <header class="pc-header custom-header">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand fw-bold text-white" href="index.html">My Company</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+          <span class="navbar-toggler-icon"></span>
+        </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#about">About Us</a>
+                            <a class="nav-link active" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="expertise.html">Areas of Expertise</a>
+                            <a class="nav-link" href="areas.html">Areas of Expertise</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#projects">Projects</a>
+                            <a class="nav-link" href="projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#contact">Contact Us</a>
+                            <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
+                        <!-- Social Media Icons -->
                         <li class="nav-item social-icons">
-                            <a href="https://facebook.com/yourpage" target="_blank"><i class="bi bi-facebook"></i></a>
-                            <a href="https://instagram.com/yourpage" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://instagram.com/yourpage" target="_blank" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <h1>About Us</h1>
-    <p>Global Youth Bridges is a non-profit organization dedicated to strengthening civil society, created to support youth, social workers, policymakers, experts, and volunteers with various skill levels to engage in and contribute to civic activities.
-        We aim to embrace diversity and tackle fears stemming from ignorance or stereotypes.
-    </p>
-    <p>
-        Our team is composed of young individuals with unique experiences, visions, and ideas, united in the belief that everyone has incredible potential if they believe in themselves.
-    </p>
-    <p>
-        Our primary goal is to foster spiritual growth while addressing environmental practices that harm the planet, defending citizens' rights, eliminating societal inequalities, and offering pathways for people with fewer opportunities to smoothly integrate
-        into society.
-    </p>
-    <p>
-        The main objectives of our organization are:
-    </p>
 
-    <ul>
-        <li>Promoting the values of diversity and inclusion among youth.</li>
-        <li>Enhancing the knowledge, skills, and attitudes necessary to fully accept, support, and celebrate societal differences.</li>
-        <li>Encouraging the participation of individuals with fewer opportunities in both national and international activities.</li>
-        <li>Supporting and advancing local initiatives.</li>
-        <li>Promoting youth involvement and volunteerism for community development.</li>
-        <li>Collaborating to combat racism and discrimination.</li>
-    </ul>
-    <p>
-        An essential objective is to implement actions that inspire young people to create better futures for themselves and their peers. We raise awareness of issues affecting youth, establish global partnerships among youth organizations, and continually involve
-        young individuals with fewer opportunities in international mobility programs.
-    </p>
+    <!-- Main content -->
+    <main class="container">
+        <h2>About Us</h2>
+        <p>Global Youth Bridges is a non-profit organization dedicated to strengthening civil society, created to support youth, social workers, policymakers, experts, and volunteers with various skill levels to engage in and contribute to civic activities.
+            We aim to embrace diversity and tackle fears stemming from ignorance or stereotypes.
+        </p>
+        <p>
+            Our team is composed of young individuals with unique experiences, visions, and ideas, united in the belief that everyone has incredible potential if they believe in themselves.
+        </p>
+        <p>
+            Our primary goal is to foster spiritual growth while addressing environmental practices that harm the planet, defending citizens' rights, eliminating societal inequalities, and offering pathways for people with fewer opportunities to smoothly integrate
+            into society.
+        </p>
+        <p>
+            The main objectives of our organization are:
+        </p>
+
+        <ul>
+            <li>Promoting the values of diversity and inclusion among youth.</li>
+            <li>Enhancing the knowledge, skills, and attitudes necessary to fully accept, support, and celebrate societal differences.</li>
+            <li>Encouraging the participation of individuals with fewer opportunities in both national and international activities.</li>
+            <li>Supporting and advancing local initiatives.</li>
+            <li>Promoting youth involvement and volunteerism for community development.</li>
+            <li>Collaborating to combat racism and discrimination.</li>
+        </ul>
+        <p>
+            An essential objective is to implement actions that inspire young people to create better futures for themselves and their peers. We raise awareness of issues affecting youth, establish global partnerships among youth organizations, and continually involve
+            young individuals with fewer opportunities in international mobility programs.
+        </p>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 
 </html>
