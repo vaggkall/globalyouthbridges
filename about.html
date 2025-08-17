@@ -67,8 +67,14 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="expertise.html">Areas of Expertise</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#projects">Projects</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="local-missions.html">Local Missions</a></li>
+                                <li><a class="dropdown-item" href="language-exchange.html">Cultural Exchange</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#contact">Contact Us</a>
@@ -120,5 +126,18 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+<script>
+    document.querySelectorAll('.nav-item.dropdown').forEach(function(dropdown) {
+        dropdown.addEventListener('mouseenter', function() {
+            let menu = this.querySelector('.dropdown-menu');
+            new bootstrap.Dropdown(this.querySelector('.dropdown-toggle')).show();
+        });
+        dropdown.addEventListener('mouseleave', function() {
+            let menu = this.querySelector('.dropdown-menu');
+            new bootstrap.Dropdown(this.querySelector('.dropdown-toggle')).hide();
+        });
+    });
+</script>
 
 </html>
