@@ -35,6 +35,15 @@
         .social-icons a:hover {
             color: #cfd4da;
         }
+        
+        .carousel-item img {
+            max-height: 600px;
+            /* pick the height you want */
+            width: auto;
+            /* auto adjust width */
+            margin: 0 auto;
+            /* center the image horizontally */
+        }
     </style>
 </head>
 
@@ -91,32 +100,61 @@
         </div>
     </header>
 
-    <!-- Placeholder Sections -->
-    <section id="about" class="py-5 container">
-        <h2>About Us</h2>
-        <p>Welcome to our company. We deliver excellence in everything we do.</p>
-    </section>
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-    <section id="expertise" class="py-5 bg-light">
-        <div class="container">
-            <h2>Areas of Expertise</h2>
-            <p>We specialize in innovative solutions tailored to your needs.</p>
-        </div>
-    </section>
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <a href="https://example.com/link1">
+                    <img src="pics/index/beach1.jpg" class="d-block w-75 mx-auto" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First Slide Title</h5>
+                        <p>Short description for slide 1</p>
+                    </div>
+                </a>
+            </div>
 
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2>Projects</h2>
-            <p>Check out some of our most recent and impactful projects.</p>
-        </div>
-    </section>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <a href="https://example.com/link2">
+                    <img src="pics/index/elafonissos.jpg" class="d-block w-75 mx-auto" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second Slide Title</h5>
+                        <p>Short description for slide 2</p>
+                    </div>
+                </a>
+            </div>
 
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Reach out via email at contact@example.com</p>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <a href="https://example.com/link3">
+                    <img src="pics/index/index2.jpg" class="d-block w-75 mx-auto" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third Slide Title</h5>
+                        <p>Short description for slide 3</p>
+                    </div>
+                </a>
+            </div>
+
         </div>
-    </section>
+
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+        <!-- Carousel indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
