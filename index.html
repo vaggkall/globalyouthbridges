@@ -45,6 +45,24 @@
             margin: 0 auto;
             /* center the image horizontally */
         }
+        
+        .expertise-section {
+            padding: 60px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .expertise-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .custom-img {
+            width: 100px;
+            /* fixed width */
+            height: auto;
+            /* keeps aspect ratio */
+        }
     </style>
 </head>
 
@@ -72,7 +90,7 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
                                 <li><a class="dropdown-item" href="local-missions.html">Local Missions</a></li>
-                                <li><a class="dropdown-item" href="language-exchange.html">Cultural Exchange</a></li>
+                                <li><a class="dropdown-item" href="cultural-exchange.html">Cultural Exchange</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -157,6 +175,78 @@
             <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
         </div>
     </div>
+
+    <main class="container my-5">
+        <div class="row g-4">
+
+            <!-- Expertise 1 -->
+            <div class="col-md-4">
+                <div class="d-flex align-items-start">
+                    <img src="pics/Expertise/volunteering.png" class="me-3 custom-img" alt="Volunteering">
+                    <div>
+                        <h3>Volunteering</h3>
+                        <p>A culture built on volunteerism and solidarity fosters a society where respect for human values leads to collective well-being and lasting prosperity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expertise 2 -->
+            <div class="col-md-4">
+                <div class="d-flex align-items-start">
+                    <img src="pics/Expertise/youth.jpg" class="me-3 custom-img" alt="Youth">
+                    <div>
+                        <h3>Youth</h3>
+                        <p>We focus on empowering young people—those with dreams, ideals, and hope...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expertise 3 -->
+            <div class="col-md-4">
+                <div class="d-flex align-items-start">
+                    <img src="pics/Expertise/environment.jpeg" class="me-3 custom-img" alt="Environment">
+                    <div>
+                        <h3>Environmental Sustainability</h3>
+                        <p>The organization is committed to environmental sustainability, focusing on meeting current needs while safeguarding resources for future generations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expertise 4 -->
+            <div class="col-md-4">
+                <div class="d-flex align-items-start">
+                    <img src="pics/Expertise/Dancing.png" class="me-3 custom-img" alt="Sports and Dance">
+                    <div>
+                        <h3>Sports and Dance</h3>
+                        <p>The organization promotes sports and dance as engaging tools for teamwork, discipline, and self-expression...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expertise 5 -->
+            <div class="col-md-4">
+                <div class="d-flex align-items-start">
+                    <img src="pics/Expertise/well_being.png" class="me-3 custom-img" alt="Well-being">
+                    <div>
+                        <h3>Well-being</h3>
+                        <p>Overall well-being by reducing stress, boosting self-esteem, and strengthening social connections...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expertise 6 -->
+            <div class="col-md-4">
+                <div class="d-flex align-items-start">
+                    <img src="pics/Expertise/Equality.png" class="me-3 custom-img" alt="Equality">
+                    <div>
+                        <h3>Equality</h3>
+                        <p>We are committed to promoting equality by ensuring that every individual, regardless of their background, has access to the same opportunities and rights.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

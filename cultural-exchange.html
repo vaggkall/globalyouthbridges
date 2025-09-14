@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="pics/common/browser-logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Menu - Datta Able Theme</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Datta Able Theme CSS (Lite Version) -->
+    <link rel="stylesheet" href="https://codedthemes.com/datta-able/bootstrap-lite/assets/css/style.css">
+    <style>
+        /* Custom header color */
+        
+        .custom-header {
+            background-color: #0c4a6e;
+        }
+        
+        .custom-header .nav-link {
+            color: #fff;
+        }
+        
+        .custom-header .nav-link:hover {
+            color: #cfd4da;
+        }
+        
+        .social-icons a {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-left: 10px;
+        }
+        
+        .social-icons a:hover {
+            color: #cfd4da;
+        }
+        
+        .carousel-item img {
+            max-height: 600px;
+            /* pick the height you want */
+            width: auto;
+            /* auto adjust width */
+            margin: 0 auto;
+            /* center the image horizontally */
+        }
+        
+        .expertise-section {
+            padding: 60px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .expertise-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .custom-img {
+            width: 100px;
+            /* fixed width */
+            height: auto;
+            /* keeps aspect ratio */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Custom-Colored Navbar -->
+    <header class="pc-header custom-header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand fw-bold text-white" href="#">
+                    <img src="pics/common/browser-logo.png" alt="Global Youth Bridges" height="40" class="d-inline-block align-text-top"> Global Youth Bridges</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="expertise.html">Areas of Expertise</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="local-missions.html">Local Missions</a></li>
+                                <li><a class="dropdown-item" href="cultural-exchange.html">Cultural Exchange</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Learn from projects
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                                <li><a class="dropdown-item" href="Greener-homes.html">Greener homes</a></li>
+                                <li><a class="dropdown-item" href="Digitilisation.html">Ethical Digitalization</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <!-- Social Media Icons -->
+                        <li class="nav-item social-icons">
+                            <a href="https://www.facebook.com/share/1YEHS4xsHK/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/globalyouthbridges/profilecard " target="_blank" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="expertise-section">
+
+            <h2>Cultural exchange</h2>
+            <p>During the Unplugging to Connect project in Elafonissos, the members of Global Youth Bridges had the privilege of participating in a truly transformative cultural exchange. The program provided a space where personal growth and collective
+                learning intertwined—through interactive workshops, teamwork challenges, and meaningful discussions, they strengthened their communication and leadership skills while also reflecting on the importance of mental and physical well-being
+                in daily life. The holistic approach of the project highlighted how cultural literacy, digital awareness, and self-care come together to empower young people to thrive in today’s interconnected world. Beyond the structured activities,
+                the vibrant setting of Elafonissos and the shared experiences with peers from diverse backgrounds fostered deep connections, mutual respect, and a renewed sense of purpose.
+            </p>
+            <p>The members of Global Youth Bridges are sincerely grateful to Amazing Youth for hosting this inspiring initiative and for bringing the mission of youth empowerment to life with such passion and care. Their dedication to creating an inclusive,
+                supportive, and forward-looking environment gave participants not only valuable skills but also the courage to embrace their voices and actively shape their futures. Through this exchange, they gained not just knowledge but also friendships
+                and a global network that will continue to encourage collaboration and innovation. Thank you, Amazing Youth, for reminding us that when young people come together to share, learn, and create, they carry forward the seeds of positive change
+                for their communities and for the world.
+            </p>
+        </div>
+    </main>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const dropdowns = document.querySelectorAll(".nav-item.dropdown");
+
+        dropdowns.forEach(dropdown => {
+            const menu = dropdown.querySelector(".dropdown-menu");
+
+            // Hover to open, but close others first
+            dropdown.addEventListener("mouseenter", () => {
+                closeAll();
+                menu.classList.add("show");
+            });
+        });
+
+        // Close when clicking anywhere outside
+        document.addEventListener("click", (e) => {
+            const isDropdown = e.target.closest(".nav-item.dropdown");
+            if (!isDropdown) {
+                closeAll();
+            }
+        });
+
+        // Helper: close all dropdowns
+        function closeAll() {
+            document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                menu.classList.remove("show");
+            });
+        }
+    });
+</script>
+
+</html>
